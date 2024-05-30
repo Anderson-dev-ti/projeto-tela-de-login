@@ -38,6 +38,16 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.446);
+
+    /* O parâmetro --transition: width .5s, height .5s;-- serve criar um tempo para acontecer a animação entre a mudança da div #login em tamanhos de telas diferentes  */
+    transition: width .5s, height .5s;
+
+    /* 
+    transition-timing-function: ease;
+    Serve para dar uma suavizada na animação e com isso ela não vai acelerar e desecelerar na mesma velocidade.    
+    */
+    transition-timing-function: ease;
+
 }
 
 section#login div#imagem {
