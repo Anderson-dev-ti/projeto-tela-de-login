@@ -13,7 +13,7 @@ Lilás: #5f2c82
     box-sizing: border-box;
 }
 
-body, html, main {
+body, html {
     background-color: #5f2c82;
     height: 100vh;
     width: 100vw;
@@ -29,14 +29,12 @@ main {
     position: absolute;
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 520px;
 
     overflow: hidden;
     border-radius: 20px;
 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.446);
 
     /* O parâmetro --transition: width .5s, height .5s;-- serve criar um tempo para acontecer a animação entre a mudança da div #login em tamanhos de telas diferentes  */
@@ -46,6 +44,9 @@ main {
     transition-timing-function: ease;
     Serve para dar uma suavizada na animação e com isso ela não vai acelerar e desecelerar na mesma velocidade.    
     */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transition-timing-function: ease;
 }
 
@@ -86,27 +87,51 @@ form > input[type=submit] {
     margin-top: 10px;
 }
 
+form .campo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5f2c82;
+    border: 2px solid #5f2c82;
+    display: flex;
+    justify-content: left;
+    height: 40px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.campo span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 8px 0px 0px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.campo input {
+    border: 1px solid black;
+    width: calc(100% - 40px);
+    background-color: #53aaa7;
+    font-size: 1em;
+    height: 100%;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.campo input:focus-within {
+    background-color: white;
+}
+
 .login {
     margin-right: 8px;
 }
 
 form > input[type=submit]:hover {
     background-color: #2d6462;
-}
-
-form .campo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #5f2c82;
-    display: flex;
-    justify-content: left;
-}
-
-.campo input {
-    border: 1px solid black;
-    width: 70%;
-    margin: 0px 5px;
 }
 
 form > .botao {
@@ -150,6 +175,7 @@ form .botao a i span {
     height: 30px;
     position: absolute;
     font-size: .9em;
+    color: #2d6462;
 }
 
 a {
