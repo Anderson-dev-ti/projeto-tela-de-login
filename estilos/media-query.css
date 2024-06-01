@@ -39,6 +39,21 @@ Grandes telas: acima de 1200px
     section#login div#formulario p {
         font-size: 1em;
     }
+
+    form .campo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #5f2c82;
+        display: flex;
+        justify-content: left;
+    }
+    
+    .campo input {
+        border: 1px solid black;
+        width: 80%;
+        margin: 0px 5px;
+    }
 }
 
 @media screen and (min-width: 950px) and (max-width: 1200px) {
@@ -70,6 +85,21 @@ Grandes telas: acima de 1200px
     section#login div#formulario p {
         font-size: 1.2em;
     }
+
+    form .campo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #5f2c82;
+        display: flex;
+        justify-content: left;
+    }
+    
+    .campo input {
+        border: 1px solid black;
+        width: 100%;
+        margin: 0px 5px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -79,7 +109,7 @@ Grandes telas: acima de 1200px
     }
 
     section#login {
-        width: 80vw;
+        width: 1200px;
     }
 
     section#login div#imagem {
@@ -98,7 +128,13 @@ Grandes telas: acima de 1200px
         font-size: 2em;
     }
     
-    section#login div#formulario p {
+    div#formulario p {
         font-size: 1.2em;
+    }
+    
+    .campo input {
+        border: 1px solid black;
+        width: 85%;
+        margin: 0px 5px;
     }
 }

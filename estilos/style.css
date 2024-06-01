@@ -47,7 +47,6 @@ main {
     Serve para dar uma suavizada na animação e com isso ela não vai acelerar e desecelerar na mesma velocidade.    
     */
     transition-timing-function: ease;
-
 }
 
 section#login div#imagem {
@@ -70,6 +69,7 @@ section#login div#formulario h1 {
 
 section#login div#formulario p {
     font-size: 0.8em;
+    margin-bottom: 10px;
 }
 
 form > input[type=submit] {
@@ -83,23 +83,33 @@ form > input[type=submit] {
     border: none;
     cursor: pointer;
     margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.login {
+    margin-right: 8px;
 }
 
 form > input[type=submit]:hover {
     background-color: #2d6462;
 }
 
-.campo {
+form .campo {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #5f2c82;
+    display: flex;
+    justify-content: left;
 }
 
 .campo input {
-    border: 1px solid red;
+    border: 1px solid black;
+    width: 70%;
+    margin: 0px 5px;
 }
 
-form > a.botao {
+form > .botao {
     display: block;
     font-size: 1em;
     text-align: center;
@@ -114,13 +124,35 @@ form > a.botao {
     border-radius: 5px;
 }
 
-form > a.botao > i {
-    font-size: 1em;
-    background-color: yellow;
+form > .botao:hover {
+    background-color: white;
 }
 
-form > a.botao .material-icons {
-    height: 30px;
+form > .botao > i {
+    font-size: 1em;
+    background-color: yellow;
+    height: 40px;
+}
+
+form > .botao .material-icons {
+    height: 40px;
     width: 30px;
-    background-color: red;
+}
+
+form .botao  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+        
+}
+
+form .botao a i span {
+    height: 30px;
+    position: absolute;
+    font-size: .9em;
+}
+
+a {
+    text-decoration: none;
+    color: #2d6462;
 }
